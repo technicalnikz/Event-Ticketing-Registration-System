@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 session_start();
 
-// Visit index.php?reset=1 to clear all saved registrations (handy for demos)
+// Visit index.php?reset=1 to clear all saved registrations
 if (isset($_GET['reset'])) {
     $_SESSION = [];
     header('Location: index.php');
@@ -61,7 +61,7 @@ $selected_schedule = null;
 
 $errors = [];
 
-// ---------- Form was submitted ----------
+// Form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $name  = trim($name);
@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = 'Please choose a ticket tier.';
     }
 
-    // ---------- File upload checks ----------
+    //File upload checks 
     $badge_upload = $_FILES['badge_photo'] ?? null;
     $badge_temp_directory = 'uploads/temp_badges';
     $badge_extension = '';
@@ -189,7 +189,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = 'Please accept the terms.';
     }
 
-    // ---------- No errors: save everything ----------
+    //  No errors: save everything 
     if (empty($errors)) {
 
         // Give the file a safe unique name, then move it to uploads/.

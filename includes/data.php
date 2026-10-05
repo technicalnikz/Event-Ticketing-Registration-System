@@ -1,8 +1,7 @@
 <?php
-// ---------- SETTINGS (easy to change) ----------
-const MIN_NAME_LENGTH = 4;                // change 4 to 8 for the live challenge
+const MIN_NAME_LENGTH = 4;         
 
-// ---------- DATA (multidimensional associative arrays) ----------
+// DATA (multidimensional associative arrays) 
 $events = [
     'chezka_comeback' => [
         'name' => '3C: Chezka’s Comeback Concert',
