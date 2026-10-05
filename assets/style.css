@@ -491,4 +491,4 @@ button:focus-visible { outline: 3px solid var(--pink); outline-offset: 2px; }
 .attendee-table td .attendee-status { display: inline-block; margin-top: 4px; }
 .attendee-table .code { font-family: ui-monospace, Consolas, monospace; font-size: 13px; color: var(--pink-dark); }
 .who { display: flex; align-items: center; gap: 10px; font-weight: 600; }
-.who img { width: 36px; height: 36px; border: 2px solid var(--line); border-radius: 50%; object-fit: cover; flex: none; }
+.who img { width: 36px; height: 36px; border: 2px solid var(--line); border-radius: 50%; object-fit: cover; flex: none; } 
