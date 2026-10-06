@@ -86,8 +86,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Age
     if (empty($age)) {
         $errors[] = 'Please enter your age.';
-    } elseif (!filter_var($age, FILTER_VALIDATE_INT, ['options' => ['min_range' => 13, 'max_range' => 120]])) {
-        $errors[] = 'Age must be a number from 13 to 120.';
+    } elseif (!filter_var($age, FILTER_VALIDATE_INT, ['options' => ['min_range' => 13, 'max_range' => 50]])) {
+        $errors[] = 'Age must be a number from 13 to 50.';
     }
 
     // Quantity
